@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root{
+      --amos-gap:15px;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .container{
+      max-width: 1200px;
+      /* display: flex; */
+      margin: auto;
+      box-sizing: border-box;
+      padding: 0 var(--amos-gap);
+    }
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: calc( var(--amos-gap)*-1);
+      margin-right: calc( var(--amos-gap)*-1);
+    }
+    .col-1{ width: 8.333333%; box-sizing:border-box; padding: 0 var(--amos-gap);}
+    .col-2{ width: 16.666666%; box-sizing:border-box; padding: 0 var(--amos-gap);}
+    .col-3{ width: 25%; box-sizing:border-box; padding: 0 var(--amos-gap);}
+    .col-4{ width: 33.333333%; box-sizing:border-box; padding: 0 var(--amos-gap);}
+    .col-5{ width: 41.666666%; box-sizing:border-box; padding: 0 var(--amos-gap);}
+    .col-6{ width: 50%; box-sizing:border-box; padding: 0 var(--amos-gap);}
+    .col-7{ width: 58.333333%; box-sizing:border-box; padding: 0 var(--amos-gap);}
+    .col-8{ width: 66.666666%; box-sizing:border-box; padding: 0 var(--amos-gap);}
+    .col-9{ width: 75%; box-sizing:border-box; padding: 0 var(--amos-gap);}
+    .col-10{ width: 83.333333%; box-sizing:border-box; padding: 0 var(--amos-gap);}
+    .col-11{ width: 91.666666%; box-sizing:border-box; padding: 0 var(--amos-gap);}
+    .col-12{ width: 100%; box-sizing:border-box; padding: 0 var(--amos-gap);}
+    .img{
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="out row">
+      <div class="col-6">
+        <div class="pic">
+          <img src="https://picsum.photos/200/500/?random=1">
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="inner row">
+          <div class="col-3">
+            <div class="pic">
+              <img src="https://picsum.photos/200/300/?random=1">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="pic">
+              <img src="https://picsum.photos/200/300/?random=1">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="pic">
+              <img src="https://picsum.photos/200/300/?random=1">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="pic">
+              <img src="https://picsum.photos/200/300/?random=1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
